@@ -2,7 +2,6 @@ package com.randebrock.bigdecimal.main.classes;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.sql.Array;
 
 public class IntArrayList implements IntList {
 
@@ -10,9 +9,11 @@ public class IntArrayList implements IntList {
 
     int[] arr = new int[10];
 
-    public IntArrayList() {
+    public IntArrayList(int index, int[] arr) {
+        this.index = index;
         this.arr = arr;
     }
+
 
     public void add(int value) {
         if (arr.length == index){
